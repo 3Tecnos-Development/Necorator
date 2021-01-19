@@ -1,10 +1,10 @@
-import { defaultStorage } from "./../storage/Storage";
+import { defaultStorage } from "../storage/Storage";
 
 /**
  *
  */
 export function RemovedMask(childKeys?: string[]) {
-  return function (object: Object, propertyKey: string) {
+  return (object: Object, propertyKey: string) => {
     if (childKeys) {
       childKeys.forEach((key) => {
         defaultStorage.addRemovedMask({
