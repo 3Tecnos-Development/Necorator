@@ -1,4 +1,5 @@
-export interface IStorageBase{
-    objectName:string,
-    propertyKey:string
+export interface IStorageBase {
+  target: Function;
+  objectName: string;
+  propertyKey: string;
 }
